@@ -1,9 +1,10 @@
 {
   "name": "grunt-liquify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Liquidjs for your grunt tasks.",
   "keywords": [
-    "gruntplugin", "liquidjs"
+    "gruntplugin",
+    "liquidjs"
   ],
   "author": "Paul Woods",
   "license": "MIT",
