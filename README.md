@@ -1,7 +1,7 @@
 README
 ======
 
-A [Grunt](https://gruntjs.com) task to process liquid using the [liquidjs](https://www.npmjs.com/package/liquidjs) library.
+A [Grunt](https://gruntjs.com) task to process Liquid using [liquidjs](https://www.npmjs.com/package/liquidjs).
 
 ### Installation
 
