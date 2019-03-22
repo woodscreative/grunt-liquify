@@ -1,6 +1,6 @@
 {
   "name": "grunt-liquify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Liquidjs for your grunt tasks.",
   "keywords": [
     "gruntplugin", "liquidjs"
@@ -8,6 +8,10 @@
   "author": "Paul Woods",
   "license": "MIT",
   "main": "tasks/liquify.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woodscreative/grunt-liquify"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
