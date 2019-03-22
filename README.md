@@ -3,11 +3,14 @@ README
 
 A [Grunt](https://gruntjs.com) task to process Liquid using [liquidjs](https://www.npmjs.com/package/liquidjs). Use it to add Liquid magic to your scripts and css assets.
 
+
+
 ### Installation
 
 ```
 npm install grunt-liquify
 ```
+
 
 ### Grunt Task
 
@@ -49,7 +52,8 @@ module.exports = function(grunt) {
 | dataDirectory 	| string 	| null    	| optional path to a directory that contains js data to be imported using the node `require` method. 	|
 | data         	| object 	| null    	| optional object to pass to liquid. This data has a higher priority than `dataDirectory`.        	|
 
-#### Data
+
+### Data
 
 All data is deep merged and must be compatible with the node [require](https://nodejs.org/api/modules.html#modules_require_id) method. The filename is used as the object key. The final `data` object is then passed to all liquid templates.
 
@@ -69,3 +73,7 @@ will produce
   foo: {}
 }
 ```
+
+### Test
+
+Run `npm install` in `/test`.
