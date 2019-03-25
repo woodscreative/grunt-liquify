@@ -3,8 +3,10 @@
   "version": "1.0.2",
   "description": "Liquidjs for your grunt tasks.",
   "keywords": [
+    "grunt",
     "gruntplugin",
-    "liquidjs"
+    "liquidjs",
+    "liquid"
   ],
   "author": "Paul Woods",
   "license": "MIT",
