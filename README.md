@@ -1,8 +1,7 @@
-README
-======
+grunt-liquify
+=============
 
 A [Grunt](https://gruntjs.com) task to process Liquid using [liquidjs](https://www.npmjs.com/package/liquidjs). Use it to add Liquid magic to your scripts and css assets.
-
 
 
 ### Installation
