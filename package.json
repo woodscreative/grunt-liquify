@@ -1,6 +1,6 @@
 {
   "name": "grunt-liquify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Liquidjs for your grunt tasks.",
   "keywords": [
     "grunt",

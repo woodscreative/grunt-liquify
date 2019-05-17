@@ -15,12 +15,12 @@ module.exports = function(grunt) {
         dataDirectory: 'data'
       },
       a: {
-        src: "dist/A.js",
-        dest: "dist/A2.js"
+        src: "src/A.js",
+        dest: "dist/A.js"
       },
       b: {
-        src: "dist/B.js",
-        dest: "dist/B2.js"
+        src: "src/B.js",
+        dest: "dist/B.js"
       }
     }
    

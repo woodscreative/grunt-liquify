@@ -4,14 +4,14 @@ grunt-liquify
 A [Grunt](https://gruntjs.com) task to process Liquid using [liquidjs](https://www.npmjs.com/package/liquidjs). Use it to add Liquid magic to your scripts and css assets.
 
 
-### Installation
+## Installation
 
 ```
 npm install grunt-liquify
 ```
 
 
-### Grunt Task
+## Examples
 
 Inside `Gruntfile.js`.
  
@@ -25,26 +25,46 @@ module.exports = function(grunt) {
       },
       example1: {
         // liquify and overwrite existing file(s)
-        src: "dist/*.js"
+        src: 'dist/*.js'
       },
       example2: {
         // liquify and output to a new file
-        src: "dist/script.js",
-        dest: "dist/script.done.js"
+        src: 'dist/script.js',
+        dest: 'dist/script.done.js'
       }
     }
+  })
+  grunt.loadNpmTasks('grunt-liquify');
+  grunt.registerTask('default', function() {
+    grunt.task.run([
+      'liquify'
+    ])
+  })
+}
+```
+
+Options can be defined per task
+
+```
+module.exports = function(grunt) {
+  grunt.initConfig({
+    liquify: {
+      example: {
+        options: {data:{foo: 'bar'}},
+        src: 'dist/*.js'
+      }
   });
   grunt.loadNpmTasks('grunt-liquify');
   grunt.registerTask('default', function() {
     grunt.task.run([
       'liquify'
-    ]);
-  });
-};
+    ])
+  })
+}
 ```
 
 
-### Options
+## Options
 
 | Tag          	|   type 	| default 	| description                                                                                               	|
 |--------------	|-------:	|---------	|-----------------------------------------------------------------------------------------------------------	|
@@ -52,7 +72,7 @@ module.exports = function(grunt) {
 | data         	| object 	| null    	| optional object to pass to liquid. This data has a higher priority than `dataDirectory`.        	|
 
 
-### Data
+## Data
 
 All data is deep merged and must be compatible with the node [require](https://nodejs.org/api/modules.html#modules_require_id) method. The filename is used as the object key. The final `data` object is then passed to all liquid templates.
 
@@ -73,6 +93,6 @@ will produce
 }
 ```
 
-### Test
+## Test
 
 Run `npm install` in `/test`.

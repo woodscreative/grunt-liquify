@@ -1,2 +1,2 @@
-{{ greeting }} {{ config.name | default: 'Guest' }},
-from {{ config.domain }} other foo.bar {{ foo.bar }}.
+Hello Bro,
+from https://example.com other foo.bar baz.
