@@ -9,18 +9,16 @@ module.exports = function(grunt) {
     liquify: {
       options: {
         data: {
-          greeting: "Hello",
-          config: {name: "Bro"}
+          greeting: 'Hello',
+          config: {name: 'Bro'}
         },
         dataDirectory: 'data'
       },
-      a: {
-        src: "src/A.js",
-        dest: "dist/A.js"
-      },
-      b: {
-        src: "src/B.js",
-        dest: "dist/B.js"
+      all: {
+        cwd: 'src',
+        src: '**/*.js',
+        dest: 'dist',
+        expand: true
       }
     }
    

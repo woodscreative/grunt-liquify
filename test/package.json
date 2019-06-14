@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "grunt": "^1.0.3",
-    "grunt-liquify": "^1.0.0"
+    "grunt": "^1.0.4",
+    "grunt-liquify": "file:local_module/grunt-liquify"
   }
 }
